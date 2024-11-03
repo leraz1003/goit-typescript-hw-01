@@ -1,3 +1,3 @@
-function merge<T extends { [key: string]: any }>(objA: T, objB: T): T {
+function merge<T, U>(objA: T, objB: U) {
   return Object.assign(objA, objB);
 }
